@@ -1,0 +1,30 @@
+// Define an array of dialogue messages
+let dialogue = [
+  "Hey there! I'm a JavaScript program.",
+  "I love nerdy things like coding and video games.",
+  "Did you know that JavaScript was created in just 10 days?",
+  "Pretty impressive, right?",
+  "I bet you're impressed with my coding skills too.",
+  "I mean, I don't mean to brag, but I am pretty awesome.",
+  "What's your favorite coding language?",
+  "Don't tell me it's PHP... just kidding!",
+  "I won't judge you for liking PHP... much.",
+  "Anyway, it was nice chatting with you!",
+  "Catch you later!"
+];
+
+// Define a function to display the dialogue messages one by one
+function displayDialogue() {
+  let index = 0;
+  let interval = setInterval(() => {
+    console.log(dialogue[index]);
+    index++;
+    if (index === dialogue.length) {
+      clearInterval(interval);
+    }
+  }, 1500);
+}
+
+// Call the displayDialogue function to start the conversation
+displayDialogue();
+
